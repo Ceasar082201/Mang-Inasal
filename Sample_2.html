@@ -1,0 +1,93 @@
+<Html>
+<head>
+<meta name="viewport" content="width= device-width, initial-scale=1.0">
+</head>
+<style>
+body{
+background-color:Black;
+}
+  button {
+         font-family: sans-serif;
+         }
+         #button3 {
+         background-color: #404242;
+         color: #f8f9f9;
+         }
+         img{
+         position: float: left;
+         display: block;
+         border-radius: 50px;
+         margin: 0 auto;
+         max-width: 25%;
+         height:auto;
+         }
+  .dropbtn{
+  background-color: #04AA6D;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: solid;
+  cursor: pointer;
+  }
+  .dropdown{
+  position: relative;
+  display: inline-block;
+  }
+  .dropdown-content{
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+  
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+<body>
+<header>
+    <nav>
+  <h2><span style ="color: White; background-color: Green;"><tt> CMK Waffles <tt></span></h2>
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">News</a>
+  <div class="dropdown" style="left;">
+    <button class="dropdown" id="button3">More</button>
+    <div class="dropdown-content" style="left:0;">
+    <a href="#">Menu</a>
+    <a href="#">Best Selling</a>
+    <a href="#">Other</a>
+    </div>
+  </div>
+  <br>
+  <button onclick="history.back()"  id="button3">Back</button>
+</div>
+   </nav>
+    </header><hr><br>
+<main>
+<img src = "/storage/emulated/0/Download/Java_Rice.jpeg"/>
+<p id="demo" style = "text-align:center; color: Blue;">
+ Hello! Good day to everyone who attended our Opening.
+ Today we finally acquire a stable place where our Milktea and Coffee shop will eventually be recognized.
+</p>
+<br>
+
+<script>
+function showDialog(){
+document.getElementById("demo").innerHTML = str;
+}
+alert("Change of plans, we will now sell waffles insted of drinks and beverages");
+</script>
+<button onclick="showDialog">Error 404</button>
+</body>
+</Html>

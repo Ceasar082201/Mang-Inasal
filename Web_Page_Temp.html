@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Hello</title>
+<meta name="Author" content="Ceasar Penarubia">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+    @media only screen and (orientation: landscape) {
+      body {
+        background:none;
+      }
+    }
+    
+* {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    .nav-bar {
+      background: lightgrey; /* same color as the li */
+      width: 30%;
+      height: 100%; /* takes the full width */
+      position: fixed;
+      top: 0px; /* sticks the side nav to the top */
+      left: 0px; /* sticks the side nav to the left side */
+      overflow-y: auto; /* adds a vertical scrolling functionality when needed */
+    }
+    .nav-bar a {
+      text-decoration: none;
+      color: black;
+      display: block;
+    }
+    .nav-bar > ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-bar > ul > li > a {
+      padding: 10px;
+      background: lightgrey;
+    }
+    .nav-bar > ul > li > a:hover {
+      background: black;
+      color: #f8f9f9;
+    }
+    .nav-bar .active {
+      background:  gray;
+      color: #f8f9f9;
+    }
+    .nav-bar li {
+      border-bottom: 1px solid #333;
+    }
+    .nav-bar li:last-child {
+      border: none;
+    }
+    .content {
+      margin-left: 30%;
+      width: 70%;
+      padding: 15px;
+      background-color:Black;
+    }
+    p{
+    font-size:32px;
+    color: Red;
+    }
+    #p{
+    font-family: cursive;
+    font-size: 24px;
+    color: yellow;
+    }
+    #div{
+    background-color: gray;
+    height: 7500px;
+    color: Red;
+    font-size: 24px;
+    }
+</style>
+<body>
+<div class="nav-bar">
+    <ul>
+      <li><a href="#" class="active"> Home </a></li>
+      <li><a href="#"> About </a></li>
+      <li><a href="#"> Articles </a></li>
+      <li><a href="#"> Gallery </a></li>
+      <li><a href="imgs.html" >pics</a></li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <p> Link ... START. </p>
+    <div id="div"><p id="p">Hello World, to Java and Java Rice i'd like to say that i enjoyed taking lessons from Syntaxes up to the most complex OOP Activities, i forgot how to use boolean data type as a choice in an automated resumé that i'm doing </p> </div>
+    
+  </div>
+<script type="text/javascript">
+
+
+</script>
+</body>
+<footer>some info: </footer>
+</html>
